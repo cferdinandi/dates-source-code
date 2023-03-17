@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Unix Timestamps</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			let halloween = new Date('October 31, 2023');
+
+			// returns 1698724800000
+			let timestamp = halloween.getTime();
+			console.log(timestamp);
+
+			// Create a new date from a Unix Timestamp
+			let earthDay = new Date(1682136000000);
+			console.log(earthDay);
+
+			// A Unix Timestamp in seconds from the server
+			let serverTimestamp = 1682136000;
+			let someDate = new Date(serverTimestamp * 1000);
+		</script>
+	</body>
+</html>

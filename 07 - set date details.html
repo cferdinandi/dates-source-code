@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Set Date Details</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Halloween at 10pm
+			let halloween = new Date('2023-10-31T22:00:00');
+
+			// Set the year to 2024
+			halloween.setFullYear(2024);
+
+			// Set the month to March
+			halloween.setMonth(2);
+
+			// Set the day of the month to the 21st
+			halloween.setDate(21);
+
+			// Set the hour of the day to 12 noon
+			halloween.setHours(12);
+
+			// Set the minutes to 30
+			halloween.setMinutes(30);
+
+			// Set the seconds to 42
+			halloween.setSeconds(42);
+
+			// Set the milliseconds to 143
+			halloween.setMilliseconds(143);
+
+			// Get the modifying date as a string
+			let dateStr = halloween.toString();
+			console.log(dateStr);
+		</script>
+	</body>
+</html>

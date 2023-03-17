@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>UTC Time</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Halloween at 10pm
+			let halloween = new Date('2023-10-31T22:00:00');
+
+			// The timezone offset
+			let offset = halloween.getTimezoneOffset();
+			console.log('offset', offset);
+
+			// UTC Month
+			let monthUTC = halloween.getUTCMonth();
+			console.log('monthUTC', monthUTC);
+
+			// UTC Date
+			let dateUTC = halloween.getUTCDate();
+			console.log('dateUTC', dateUTC);
+
+			// UTC Hours
+			let hourUTC = halloween.getUTCHours();
+			console.log('hourUTC', hourUTC);
+		</script>
+	</body>
+</html>

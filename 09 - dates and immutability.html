@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Dates and immutability</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Halloween at 10pm
+			let halloween = new Date('2023-10-31T22:00:00');
+
+			// This is a reference to the original
+			let nextHalloween = halloween;
+
+			// Create a new date from the original
+			// let nextHalloween = new Date(halloween);
+
+			// This updates both variables
+			nextHalloween.setFullYear(2024);
+
+			// Log both dates
+			console.log(halloween, nextHalloween);
+		</script>
+	</body>
+</html>

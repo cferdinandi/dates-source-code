@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Add and remove time from a date</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Halloween at 10pm
+			let halloween = new Date('2023-10-31T22:00:00');
+
+			// Add 2 years
+			halloween.setFullYear(halloween.getFullYear() + 2);
+
+			// Go back 5 months
+			halloween.setMonth(halloween.getMonth() - 5);
+
+			// Add 14 days
+			halloween.setDate(halloween.getDate() + 14);
+
+			// Go back 3 hours
+			halloween.setHours(halloween.getHours() - 3);
+
+			// Add 10 minutes
+			halloween.setMinutes(halloween.getMinutes() + 10);
+
+			// Add 42 seconds
+			halloween.setSeconds(halloween.getSeconds() + 42);
+
+			// Add 143 milliseconds
+			halloween.setMilliseconds(halloween.getMilliseconds() + 143);
+
+			// Get the modifying date as a string
+			let dateStr = halloween.toString();
+			console.log(dateStr);
+		</script>
+	</body>
+</html>

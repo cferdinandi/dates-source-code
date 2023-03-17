@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Formatting the Date as a string</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Halloween at 10pm
+			let halloween = new Date('2023-10-31T22:00:00');
+
+
+			//
+			// Default Values
+			//
+
+			// Get the full date and time
+			let fullStr = halloween.toLocaleString();
+			console.log('fullStr', fullStr);
+
+			// Get the formatted date
+			let dateStr = halloween.toLocaleDateString();
+			console.log('dateStr', dateStr);
+
+			// Get the formatted time
+			let timeStr = halloween.toLocaleTimeString();
+			console.log('timeStr', timeStr);
+
+
+			//
+			// Options
+			//
+
+			// Get the date and time formatted for Spain
+			let spanish = halloween.toLocaleString('es-ES');
+			console.log('spanish', spanish);
+
+			// Control formatting options
+			let day = halloween.toLocaleString({}, {weekday: 'long'});
+			console.log('day', day);
+		</script>
+	</body>
+</html>

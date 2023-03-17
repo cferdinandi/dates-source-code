@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Getting the Date as a string</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Halloween at 10pm
+			let halloween = new Date('2023-10-31T22:00:00');
+
+			// Get the full date object as a string
+			let str = halloween.toString();
+			console.log('str', str);
+
+			// Get the date portion of the date object as a string
+			let dateStr = halloween.toDateString();
+			console.log('dateStr', month);
+
+			// Get the ISO 8601 string for a date
+			let isoStr = halloween.toISOString();
+			console.log('isoStr', isoStr);
+
+			// Also returns the ISO 8601 string for a date
+			// NOT JSON!
+			let jsonStr = halloween.toJSON();
+			console.log('jsonStr', jsonStr);
+		</script>
+	</body>
+</html>

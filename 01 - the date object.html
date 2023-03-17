@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>The Date Object</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Create a date object for right now
+			let now = new Date();
+			console.log(now);
+
+
+			//
+			// Simple Strings
+			//
+
+			// Create a date object for Halloween
+			let halloween = new Date('October 31, 2022');
+			console.log(halloween);
+
+			// Create a date object for March 21 at 2pm
+			let springLuncheon = new Date('March 21, 2023 14:00');
+			console.log(springLuncheon);
+
+
+
+			//
+			// ISO 8601 Strings
+			//
+
+			// New Year's at midnight
+			let newYears = new Date('2024-01-01T00:00:00');
+			console.log(newYears);
+
+			// July 4 at noon
+			let summerParty = new Date('2023-07-04T12:00:00');
+			console.log(summerParty);
+
+
+
+			//
+			// Multiple Integers
+			//
+
+			// Notice the month index is 9 even though October is the 10th month
+			let halloween2 = new Date(2021, 9, 31);
+			console.log(halloween2);
+
+			// Christmas morning at 10:30 am, local time
+			let christmas = new Date(2021, 11, 25, 10, 30);
+			console.log(christmas);
+		</script>
+	</body>
+</html>

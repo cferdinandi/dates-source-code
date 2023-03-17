@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Getting Date Details</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Halloween at 10pm
+			let halloween = new Date('2023-10-31T22:00:00');
+
+			// Get the year
+			// returns 2023
+			let year = halloween.getFullYear();
+
+			// Get the month
+			// returns 9
+			let month = halloween.getMonth();
+
+			// Get the day of the month
+			// returns 31
+			let date = halloween.getDate();
+
+			// Get the day of the week
+			// returns 2
+			let day = halloween.getDay();
+
+			// Get the hour of the day (in 24-hour format)
+			// returns 22
+			let hour = halloween.getHours();
+
+			// Get the minutes
+			// returns 0
+			let minutes = halloween.getMinutes();
+
+			// Get the seconds
+			// returns 0
+			let seconds = halloween.getSeconds();
+
+			// Get the milliseconds
+			// returns 0
+			let milliseconds = halloween.getMilliseconds();
+
+
+			console.log('year', year);
+			console.log('month', month);
+			console.log('date', date);
+			console.log('day', day);
+			console.log('hour', hour);
+			console.log('minutes', minutes);
+			console.log('seconds', seconds);
+			console.log('milliseconds', milliseconds);
+		</script>
+	</body>
+</html>
